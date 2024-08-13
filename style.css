@@ -1,0 +1,778 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* ############## NAVBAR ############### */
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: #F5F7FA;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo{
+    width: 160px;
+}
+.navlist a{
+    padding-left:40px;
+    color:#4D4D4D;
+    text-decoration: none;
+}
+.login{
+    border: none;
+    margin-right: 30px;
+}
+.login a{
+    color: #4CAF4F;
+    text-decoration: none;
+}
+.login a:hover{
+    color: grey;
+}
+.signup{
+    padding: 16px 30px;
+    background-color: #4CAF4F;
+    border-radius: 8px;
+    border: none;
+}
+.signup:hover{
+    background-color: #04691e;
+}
+.signup a{
+    color: white;
+    text-decoration: none;
+}
+.hamburger{
+    display: none;
+}
+
+/* ######## HERO ######## */
+.hero{
+    width: 100%;
+    height: auto;
+    background-color: #F5F7FA;
+}
+.herocontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 500px;
+    /* border: 1px orangered solid; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 60px;
+    
+}
+.content{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid red; */
+}
+.heroimg{
+    margin-left: 20px;
+}
+.content h2{
+    font-size: 60px;
+    color: #4CAF4F;
+}
+.content h2::first-line{
+    color: #4D4D4D;
+}
+.herobutton{
+    padding: 18px 40px;
+    background-color: #4CAF4F;
+    border-radius: 5px;
+    border: none;
+}
+.herobutton:hover{
+    background-color: #04691e;
+}
+.herobutton a{
+    text-decoration: none;
+    color: white;
+}
+.content p{
+    padding: 50px 0;
+}
+.roundbox{
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+}
+.boxgreen{
+    width: 10px;
+    height: 10px;
+    background-color: #4CAF4F;
+    border-radius: 50%;
+}
+.boxash{
+    width: 10px;
+    height: 10px;
+    background-color: #4caf4f65;
+    border-radius: 50%;
+}
+#box{
+    margin: 10px;
+}
+
+/* ############ CLIENTS ############# */
+.clients{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: 50px 0;
+    padding: 50px 0;  
+}
+.clients h3{
+    font-size: 36px;
+    color: #4D4D4D;
+}
+.clients p{
+    margin: 30px 0;
+    color: #4D4D4D;
+}
+.clientlogo{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.clogo{
+    width: 60px;
+    align-items: center; 
+}
+/* ########### COMMUNITY ########### */
+.community{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid orangered; */
+}
+.ccontent{
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid green; */
+}
+.ccontent h3{
+    font-size: 35px;
+    padding-bottom: 20px;
+    color: #4D4D4D;  
+}
+.groups{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+.group-one, .group-two, .group-three{
+    width: 300px;
+    height: auto;
+    /* border: 1px blue solid; */
+    text-align: center;
+    padding: 30px;
+    box-shadow: 1px 1px 5px #a7a6a660;
+    border-radius: 10px;
+}
+.group-one:hover{
+    background-color: #d8dbd452;
+}
+.group-two:hover{
+    background-color: #d8dbd452;
+}
+.group-three:hover{
+    background-color: #d8dbd452;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.groups h3{
+    font-size: 28px;
+    margin: 16px 0;
+    color: #4D4D4D;
+}
+.groups p{
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+/* ########## BODY ############# */
+.bodyyy{
+    width: 100%;
+    height: auto;
+}
+.bodycontent{
+    width: 80%;
+    /* border: 1px solid purple; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.unseen{
+    /* border: 1px green solid; */
+    height: auto;
+    align-items: center;
+    /* justify-content: center; */
+    width: 50%;
+}
+.unseen h3{
+    font-size: 36px;
+    color: #4D4D4D;
+}
+.unseen p{
+    margin: 40px 0;
+    color: #4D4D4D;
+}
+.unseenbutton{
+    padding: 18px 40px;
+    background-color: #4CAF4F;
+    border: none;
+    border-radius: 5px;
+}
+.unseenbutton:hover{
+    background-color: #04691e;
+}
+.unseenbutton a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ########## ACHIEVEMENTS ############### */
+.achievements{
+    background-color: #F5F7FA;
+    width: 100%;
+}
+.section{
+    /* border: 1px solid gray; */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.iconsnumber{
+    display: flex;  
+}
+.icontex{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+.icontex:hover{
+    box-shadow: 1px 1px 10px #bebebe8c;
+}
+.tex{
+    display: flex;
+    flex-direction: column;
+    margin-right: ;
+}
+.tex h3{
+    font-size: 26px;
+    color: #4D4D4D;
+}
+.help h4{
+    font-size: 30px;
+    line-height: 40px;
+    color: #4CAF4F;
+    padding: 10px 0;
+}
+h4::first-line{
+    color:#4D4D4D;
+}
+.immm{
+    padding: 20px;
+}
+
+/* ############# CALENDER ############### */
+.calender{
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+}
+.unlock{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px green solid;  */
+    margin: auto;
+}
+.unlockdiv{
+    width: 45%;
+    margin: 30px 0;
+}
+.unlockdiv h3{
+    font-size: 34px;
+    color: #4D4D4D;
+}
+.unlockdiv p{
+    color: #4D4D4D;
+    padding-top: 30px;
+}
+.unlockbutton{
+    padding: 18px 40px;
+    background-color: #4CAF4F;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.unlockbutton:hover{
+    background-color: #04691e;
+}
+.unlockbutton a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ############# CUSTOMER ############### */
+.customer{
+    width: 100%;
+    height: auto;
+    margin: 60px 0;  
+}
+.frame{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px green solid; */
+    margin: auto;
+}
+.customerdiv{
+    width: 60%;
+}
+.customerdiv h3{
+    font-size: 30px;
+    color: #4CAF4F;
+}
+.customerdiv p{
+    color: #4D4D4D;
+    line-height: 20px;
+    padding-bottom: 30px;
+}
+#meet{
+    font-size: 20px;
+}
+.framelogo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flogo{
+    /* margin-bottom: -50px; */
+    padding-right: 20px;
+}
+.unlockbutton{
+    padding: 18px 40px;
+    background-color: #4CAF4F;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.unlockbutton a{
+    text-decoration: none;
+    color: white;
+}
+.communityupdates{
+    width: 100%;
+    height: auto;
+    /* border: 1px green solid; */
+    padding: 30px 0 60px 0;
+}
+.comm-content{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid orange; */
+    margin: auto;  
+}
+.boxxx{
+    position: relative;
+}
+.xxx{
+    width: 300px;
+    height: 220px;
+    /* border: 1px green solid; */
+    border-radius: 10px
+}
+.xxx:hover{
+    box-shadow: 1px 1px 20px rgba(73, 73, 73, 0.521);
+}
+.innerbox{
+    width: 250px;
+    height: 150px;
+    background-color: #F5F7FA;
+    margin-left: 25px;
+    border-radius: 5px;
+    /* border: 1px red solid; */
+    position: absolute;
+    bottom:-60px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 1px 8px rgba(170, 168, 168, 0.418);
+}
+.innerbox strong{
+    line-height: 22px;
+    margin-top: 280px;
+    color: #4D4D4D;
+}
+.innerread{
+    width: 200px;
+}
+.comm-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px 20px;
+    /* border: 1px solid gray; */
+
+}
+.comm-content h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #4D4D4D;
+}
+.comm-content article{
+    font-size: 16px;
+    text-align: center;
+    padding: 0 250px;
+    color: #4D4D4D;
+}
+
+/* ########### BOTTOM PAGE ############# */
+.bottompage{
+    width: 100%;
+    height: auto;
+    background-color: #F5F7FA;
+    padding: 50px 0;
+}
+.bottom{
+    text-align: center;
+}
+.bottom h2{
+    font-size: 45px;
+    margin: 0 400px;
+}
+.bottombutton{
+    padding: 18px 40px;
+    background-color: #4CAF4F;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.bottombutton:hover{
+    background-color: #04691e;
+}
+.bottombutton a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ############### FOOTER-SECTION ################ */
+footer {
+    width: 100%;
+    height: auto;
+    position: relative;;
+    /* top: 50px; */
+    background-color: #263238;
+}
+.foot {
+    display: flex;
+    justify-content: space-evenly; 
+    width: 70%;
+   padding-top: 40px;
+    font-size: 16px;
+    margin: auto;
+}
+.fone p{
+    color:#F5F7FA;
+    font-size: 14px;
+    padding: 30px 0;
+}
+.foot > div {
+    flex: 1; 
+    margin: 0 10px; 
+}
+footer a {
+    display: block; 
+    margin: 5px 0;
+    color:#F5F7FA;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 14px; 
+}
+#marg {
+    margin-bottom: 30px;
+    font-weight: bolder;  
+}
+.foot li{
+    list-style-type: none;   
+}
+.furfoot{
+    font-size: 30px;
+    font-weight: bold;
+}
+#email{
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    /* border-bottom: 1px solid black; */
+    padding: 10px 0 8px 0px;
+    width: 100%;
+    outline: none;
+    background-color: #4D4D4D;
+}
+input::placeholder{
+    color: #D9DBE1;  
+}
+input[type="email"] {
+    background: url(./images/send.png) no-repeat right 10px center;
+    text-indent: 20px;
+}
+.footerlogo{
+    display: flex;
+    padding: 10px 0;
+}
+.flo{
+    margin-right: 20px;
+}
+.herobutton{
+    margin-bottom: 30px;
+}
+
+
+/* ######## MEDIA-QUERY 1200px ######## */
+@media (max-width: 1200px) and (min-width: 768px) {
+    .navlist, .registration{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    .herocontainer{
+        /* flex-wrap: wrap-reverse; */
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+    }
+    .heroimg{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .content{
+        width: 100%;
+        text-align: center;
+
+        /* border: 1px solid red; */
+    }
+
+    .comm-cont{
+        gap: 80px;
+    }
+   
+    .bottom h2{
+        font-size: 30px;
+        margin: 0 200px;
+    }
+    .bottombutton{
+        width: 180px;
+        padding: 30px 0;
+    }
+    .ftwo, .fthree, .ffour{
+        display: none;
+    }
+    .foot{
+        
+    }
+    .fone{
+        /* border: 1px solid red; */
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .footerlogo{
+        /* border: 1px solid yellow; */
+        justify-content: center;
+    }
+    .comm-content h3{
+        font-size: 30px;
+    }
+    .comm-content article{
+        padding: 0 0px;
+    }
+    .customerdiv{
+        text-align: center;
+    }
+    .customerdiv{
+        width: 100%;
+    }
+    .framelogo{
+        align-items: center;
+        justify-content: center;
+    }
+    .unlockdiv{
+        width: 100%;
+        text-align: center;
+    }
+    .help{
+        text-align: center;
+    }
+    .unseen{
+        width: 80%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .groups{
+        row-gap: 40px;
+    }
+   
+    
+}
+
+
+/* ######## MEDIA-QUERY 768px ######## */
+@media (max-width: 768px) and (min-width: 320px) {
+    .navlist, .registration{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        margin-left: auto;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    .herocontainer{
+        /* flex-wrap: wrap-reverse; */
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+    }
+    .heroimg{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .boxgreen{
+        width: 10px;
+        height: 10px;
+        background-color: #4CAF4F;
+        border-radius: 50%;
+    }
+    .boxash{
+        width: 10px;
+        height: 10px;
+        background-color: #4caf4f65;
+        border-radius: 50%;
+    }
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+    .content h2{
+        font-size: 40px;
+    }
+    .ccontent h3{
+        font-size: 28px;
+        padding-bottom: 20px;
+       
+    }
+    .groups h3{
+        font-size: 24px;
+        margin: 16px 0;
+    }
+    .groups p{
+        font-size: 14px;
+    }
+    .clients h3{
+        font-size: 30px;
+    }
+    .comm-cont{
+        gap: 80px;
+    }
+    /* footer{
+        display: none;
+    } */
+    .bottom h2{
+        font-size: 30px;
+        margin: 0 100px;
+    }
+    .bottombutton{
+        width: 150px;
+        padding: 30px 0;
+    }
+    .ftwo, .fthree, .ffour{
+        display: none;
+    }
+    .clogo{
+        width: 40px;
+    }
+    .fone{
+        /* border: 1px solid red; */
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .footerlogo{
+        /* border: 1px solid yellow; */
+        justify-content: center;
+    }
+    .comm-content h3{
+        font-size: 28px;
+    }
+    .comm-content article{
+        padding: 0 0px;
+    }
+    .customerdiv{
+        text-align: center;
+    }
+    .customerdiv{
+        width: 100%;
+    }
+    .framelogo{
+        align-items: center;
+        justify-content: center;
+    }
+    .unlockdiv{
+        width: 100%;
+        text-align: center;
+       
+    }
+    .help{
+        text-align: center;
+    }
+    .unseen{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .groups{
+        row-gap: 40px;
+    }
+   
+}
+
+
