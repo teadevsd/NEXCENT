@@ -295,7 +295,9 @@ h4::first-line{
 }
 .immm{
     padding: 20px;
+    width: 0%;
 }
+
 
 /* ############# CALENDER ############### */
 .calender{
@@ -782,7 +784,7 @@ input[type="email"] {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 10px;
+        padding: 0 20px;
     }
     .heroimage, .bodyimg, .calenderimg, .customerimg{
         width: 80%;
@@ -796,17 +798,24 @@ input[type="email"] {
     .clients h3{
         font-size: 30px;
     }
+    .clientlogo{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .unseen h3{
         font-size: 30px;
     }
     .tex h3{
-        font-size: 24px;
+        font-size: 20px;
     }
     .tex p{
         font-size: 14px;
     }
     .icontex{
         margin: 20px;
+    }
+    .imm{
+        width: 70%;
     }
     .unlockdiv h3{
         font-size: 30px;
@@ -819,6 +828,9 @@ input[type="email"] {
     }
     .ftwo, .fthree, .ffour{
         display: none;
+    }
+    .bottombutton{
+        padding: 18px 40px;
     }
         
 }
