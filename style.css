@@ -558,8 +558,8 @@ input[type="email"] {
 }
 
 
-/* ######## MEDIA-QUERY 1200px ######## */
-@media (max-width: 1200px) and (min-width: 768px) {
+/* ######## MEDIA-QUERY 1024px ######## */
+@media (max-width: 1024px) and (min-width: 768px) {
     .navlist, .registration{
         display: none;
     }
@@ -653,7 +653,7 @@ input[type="email"] {
 
 
 /* ######## MEDIA-QUERY 768px ######## */
-@media (max-width: 768px) and (min-width: 320px) {
+@media (max-width: 768px) {
     .navlist, .registration{
         display: none;
     }
@@ -773,6 +773,20 @@ input[type="email"] {
         row-gap: 40px;
     }
    
+}
+@media (max-width: 768px) {
+    .navlist, .registration{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+    }
+    .heroimage, .bodyimg, .calenderimg, .customerimg{
+        width: 80%;
+    }
 }
 
 
